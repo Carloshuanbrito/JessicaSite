@@ -37,25 +37,36 @@ const Hero: React.FC = () => {
       <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 pt-20 md:pt-32 pb-12 z-20">
         <RevealOnScroll>
           <div className="max-w-xl mx-auto md:mx-0">
-            <span className="inline-block py-1.5 px-4 border border-marsala text-marsala text-xs font-bold tracking-widest uppercase mb-6 bg-white/50 backdrop-blur-sm shadow-sm">
-              Inscrita na OAB/CE 48.353
-            </span>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-graphite leading-[1.2] mb-6">
-              Soluções Jurídicas com <span className="text-marsala italic relative whitespace-nowrap">
-                Olhar Humano
-                <svg className="absolute w-full h-2 bottom-0 left-0 text-marsala/20 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
-                  <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
-                </svg>
-              </span> e Estratégia Empresarial.
-            </h1>
-            <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
-              Especialista em Direito das Famílias e Blindagem Jurídica para Empresas. Atendimento ágil, técnico e acolhedor em todo o Brasil.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={() => window.open('https://wa.me/5585999999999', '_blank')}>
-                Agendar Consulta Online <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </div>
+            <RevealOnScroll delay={100}>
+              <span className="inline-block py-1.5 px-4 border border-marsala text-marsala text-xs font-bold tracking-widest uppercase mb-6 bg-white/50 backdrop-blur-sm shadow-sm animate-float">
+                Inscrita na OAB/CE 48.353
+              </span>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={300}>
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-graphite leading-[1.2] mb-6">
+                Soluções Jurídicas com <span className="text-marsala italic relative whitespace-nowrap">
+                  Olhar Humano
+                  <svg className="absolute w-full h-2 bottom-0 left-0 text-marsala/20 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
+                  </svg>
+                </span> e Estratégia Empresarial.
+              </h1>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={500}>
+              <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
+                Especialista em Direito das Famílias e Blindagem Jurídica para Empresas. Atendimento ágil, técnico e acolhedor em todo o Brasil.
+              </p>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={700}>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button onClick={() => window.open('https://wa.me/5585997878827', '_blank')}>
+                  Agendar Consulta Online <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </div>
+            </RevealOnScroll>
           </div>
         </RevealOnScroll>
       </div>
@@ -71,7 +82,7 @@ const Hero: React.FC = () => {
             <img
               src="/fotos/jessica.jpg"
               alt="Dra. Jéssica Santos"
-              className="w-full h-full object-cover object-top transition-all duration-700 scale-105 origin-top contrast-[1.05] saturate-[1.1] brightness-[1.05]"
+              className="w-full h-full object-cover object-top transition-all duration-700 scale-105 origin-top contrast-125 saturate-150 brightness-110"
               fetchPriority="high"
               onError={() => setImageError(true)}
             />
